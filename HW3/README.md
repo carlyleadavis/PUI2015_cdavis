@@ -11,12 +11,18 @@ The second part of the homework was an exercise about Z-scores and Chi-Squared T
 Packages used:
 
 import pylab as pl
+
 import numpy as np
+
 from scipy.stats import norm
+
 import matplotlib.mlab as mlab
+
 import matplotlib.pyplot as plt
 
 import os
+
 import sys
+
 import numpy as np
 import pylab as pl
