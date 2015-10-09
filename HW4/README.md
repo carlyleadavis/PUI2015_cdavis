@@ -14,15 +14,23 @@ from __future__ import print_function
 
 
 * For example, for Python 3 users:
+
 import zipfile, requests, io
+
 r = requests.get('https://s3.amazonaws.com/tripdata/201409-citibike-tripdata.zip')
+
 z = zipfile.ZipFile(io.BytesIO(r.content))
+
 df = pd.read_csv(z.open('201409-citibike-tripdata.csv'))
 
 * For Python 2 users:
+
 import zipfile, requests, StringIO
+
 r = requests.get('https://s3.amazonaws.com/tripdata/201409-citibike-tripdata.zip')
+
 z = zipfile.ZipFile(StringIO.StringIO(r.content))
+
 df = pd.read_csv(z.open('201409-citibike-tripdata.csv'))
 
 Packages used:
